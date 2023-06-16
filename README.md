@@ -33,9 +33,7 @@ This is a Python script that allows you to check the availability of Discord use
 
 Run the following command to start checking the availability of usernames:
 
-python main.py -t <number_of_threads>
-
-Replace `<number_of_threads>` with the desired number of threads to use for checking usernames. By default, it uses one thread which is recommended if you have a singular token.
+python main.py
 
 The script will start checking the availability of usernames in the wordlists using the provided tokens. The results will be stored in separate files: `available.txt` and `unavailable.txt`.
 
