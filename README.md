@@ -25,7 +25,7 @@ This is a Python script that allows you to check the availability of Discord use
 
 2. Prepare your tokens and wordlists:
 
-- Create a `tokens.txt` file and specify your Discord token(s) in it. **Make sure you don't share your token with anyone.**
+- Create a `tokens.txt` file and specify your Discord token in it. **Make sure you don't share your token with anyone.**
 
 - If you want to filter your own wordlists, use the `helper.py` script included in the repository. Follow the instructions provided in the script to split lines or filter word length in the wordlists.
 
@@ -35,7 +35,7 @@ Run the following command to start checking the availability of usernames:
 
 python main.py
 
-The script will start checking the availability of usernames in the wordlists using the provided tokens. The results will be stored in separate files: `available.txt` and `unavailable.txt`.
+The script will start checking the availability of usernames in the wordlists using the provided token. The results will be stored in separate files: `available.txt` and `unavailable.txt`.
 
 ## License
 
