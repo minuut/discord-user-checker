@@ -46,3 +46,6 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 The loguru library for flexible logging: https://github.com/Delgan/loguru
+
+## Disclaimer
+This script is for educational purposes only. Use it at your own risk. The author is not responsible for any consequences that may result from using this script.
