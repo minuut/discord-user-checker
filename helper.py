@@ -32,10 +32,14 @@ def split_lines(filename):
         print(f"Error: File '{file_path}' is empty.")
         return
 
-    with open(file_path, 'w') as file:
-        for word in words:
-            file.write(word + '\n')
+    filtered_words = []
+    for word in words:
+        filtered_word = re.sub(r'[^a-zA-Z]', '', word)
+        filtered_words.append(filtered_word)
 
+    with open(file_path, 'w') as file:
+        for word in filtered_words:
+            file.write(word + '\n')
 def main():
     filename = input("Enter the name of the file to process: ")
 
