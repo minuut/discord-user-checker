@@ -189,7 +189,7 @@ class Worker(Thread):
             elif result == "unknown_error":
                 error_json = result[1]
                 logger.error(f"Unknown error: {error_json}")
-            elif result[0] == "rate_limited":
+            elif result == "rate_limited":
                 sleep_time = result[1] + random.uniform(0.5, 1.2)
                 logger.warning(
                     f"Thread {self.name}: Token {best_token.token} is rate limited. Sleeping for {sleep_time} seconds before the next request."
