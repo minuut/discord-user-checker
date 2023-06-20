@@ -68,10 +68,12 @@ def filter_words_and_save_by_length(filename):
 
 
 def main():
+
     print("""
     Option 1: Splits words into separate lines by removing any non-alphabetic characters.
     Option 2: Filters the words in the file to a specific length input by the user.
-    Option 3: Filters the words in the file by their length and saves them into separate files named according to their length (i.e., 4-letter words will be saved in a file named '4char.txt', 5-letter words in '5char.txt', and so on)
+    Option 3: Filters the words in the file by their length and saves them into separate files named according to their length 
+    (i.e., 4-letter words will be saved in a file named '4char.txt', 5-letter words in '5char.txt', and so on)
     this can be useful when you have a gigantic wordlist.
     """)
 
