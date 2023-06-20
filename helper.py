@@ -54,15 +54,18 @@ def filter_words_and_save_by_length(filename):
     word_dict = {}
     for word in words:
         word_length = len(word)
-        if word_length not in word_dict:
-            word_dict[word_length] = []
-        word_dict[word_length].append(word)
+        pattern = re.compile(r'^[a-zA-Z]{%d}$' % word_length)
+        if re.match(pattern, word):
+            if word_length not in word_dict:
+                word_dict[word_length] = []
+            word_dict[word_length].append(word)
 
     for word_length, words in word_dict.items():
         output_file_path = os.path.join("wordlists", f'{word_length}char.txt')
         with open(output_file_path, 'w') as file:
             for word in words:
                 file.write(word + '\n')
+
 
 def main():
     print("""
