@@ -27,7 +27,7 @@ This is a Python script that allows you to check the availability of Discord use
 
 - Create a `tokens.txt` file and specify your Discord token in it. **Make sure you don't share your token with anyone.**
 
-- If you want to filter your own wordlists, use the `helper.py` script included in the repository. Follow the instructions provided in the script to split lines or filter word length in the wordlists.
+- If you want to filter your own wordlists, use the `helper.py` by running `python helper.py` the script is included in the repository. Follow the instructions provided in the script to split lines or filter word length in the wordlists. 
 
 ## Usage
 
