@@ -12,7 +12,7 @@ This is a Python script that allows you to check the availability of Discord use
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/minuut/discord-username-checker.git
+   git clone https://github.com/minuut/discord-userchecker.git
 
 2. pip install -r requirements.txt
 
